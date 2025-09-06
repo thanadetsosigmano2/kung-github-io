@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เว็บไซต์โรค HPV</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mrs+Saint+Delafield&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      font-family: 'Overpass Mono', monospace;
+      font-size: 18px;
+      text-align: left;
+      margin: 15px 5px;
+      padding: 10px;
+      background-color: #2f2f2f;
+      color: #f0f0f0;
+      letter-spacing: 0.07rem;
+      line-height: 1.6rem;
+    }
+
+    a {
+      color: hotpink;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: lightskyblue;
+    }
+
+    #header-title {
+      font-size: 4rem !important;
+      text-decoration: none !important;
+      font-family: 'Caveat', cursive !important;
+      float: left;
+    }
+
+    #namehead,
+    #headlinks {
+      border: 4px double white;
+      margin: 5px;
+      padding: 16px;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    h1, h2, h3 {
+      color: lightskyblue;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-family: "Gloria Hallelujah", serif;
+    }
+
+    h2 {
+      font-family: "Gloria Hallelujah", serif;
+      border-bottom: 2px solid hotpink;
+      padding-bottom: 0.3rem;
+      margin-top: 1.5rem;
+    }
+
+    h3 {
+      font-family: "Ubuntu Mono", monospace;
+      color: #ffb6c1;
+    }
+
+    p {
+      text-indent: 2rem;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    li {
+      padding: 0.25rem 0;
+    }
+
+    li::before {
+      content: "• ";
+      color: hotpink;
+      font-weight: bold;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    mark {
+      background-color: hotpink;
+      color: white;
+      padding: 0 0.2rem;
+      border-radius: 2px;
+    }
+
+    img.reload-icon {
+      vertical-align: baseline;
+      width: 1.7rem;
+      height: auto;
+      float: left;
+      margin: 0 1rem;
+      transition: transform 0.3s;
+    }
+
+    img.reload-icon:hover {
+      transform: rotate(20deg);
+    }
+
+    nav ul li a {
+      font-size: 1.4rem;
+    }
+
+    nav ul li i {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    /* ภาพด้านขวา */
+    .img-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
+      border: 4px solid hotpink;
+      border-radius: 12px;
+      max-width: 40%;
+      height: auto;
+    }
+
+    .img-credit {
+      font-size: 0.8rem;
+      color: #ccc;
+      display: block;
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      #header-title {
+        font-size: 3rem;
+      }
+
+      nav ul li a {
+        font-size: 1.2rem;
+      }
+
+      .img-right {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 80%;
+      }
+
+      .img-credit {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+    window.addEventListener("load", () => {
+      new fairyDustCursor({
+        colors: ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"],
+      });
+    });
+  </script>
+</head>
+<body>
+  <header id="uhead">
+    <div id="namehead" class="clearfix">
+      <h1><span id="header-title">โรค HPV</span></h1>
+      <a href="javascript: location.reload();" class="clearfix">
+        <img src="reload.png" alt="Reload Page" class="reload-icon">
+      </a>
+    </div>
+    <p>สวัสดีครับ เว็บไซต์นี้จะเป็นเว็บไซต์ที่ให้ความรู้เกี่ยวกับเชื้อ HPV อย่างละเอียด จัดทำโดยห้อง 204 เลขที่ 2,4,5,13,19,24,31,32,36</p>
+    <hr>
+  </header>
+
+  <main>
+    <!-- รูปภาพทั้งหมด 4 รูป -->
+    <img src="https://www.bangpakok3.com/upload/เพศชายควรฉีดวัคซีน_HPV-01.jpg" alt="HPV Vaccination" class="img-right">
+    <span class="img-credit">ภาพ: bangpakok3.com</span>
+
+    <img src="https://www.bangpakok3.com/upload/ไวรัสตัวร้าย_เสี่ยงโรคทั้งชายและหญิง-01.jpg" alt="HPV Virus" class="img-right">
+    <span class="img-credit">ภาพ: bangpakok3.com</span>
+
+    <img src="https://www.patrangsit.com/wp-content/uploads/2023/02/HPV-02-1024x1024.jpg" alt="HPV Awareness" class="img-right">
+    <span class="img-credit">ภาพ: patrangsit.com</span>
+
+    <img src="https://www.pccms.ac.th/wp-content/uploads/2020/01/11266091642445.jpg" alt="HPV Infection" class="img-right">
+    <span class="img-credit">ภาพ: pccms.ac.th</span>
+
+    <h2>HPV คืออะไร</h2>
+    <p>HPV (Human Papillomavirus) คือ ไวรัสชนิดหนึ่งที่สามารถติดเชื้อในมนุษย์ เป็นสาเหตุสำคัญของโรคติดต่อทางเพศสัมพันธ์ (STIs) และเกี่ยวข้องกับมะเร็งปากมดลูก มะเร็งอวัยวะเพศ และหูคอ</p>
+
+    <h3>สาเหตุการติดเชื้อ HPV</h3>
+    <ul>
+      <li><b>การมีเพศสัมพันธ์</b>
+        <ul>
+          <li>ช่องคลอด</li>
+          <li>ทวารหนัก (anal sex)</li>
+          <li>ทางปาก (oral sex)</li>
+          <li>จำนวนคู่เพศมาก</li>
+        </ul>
+      </li>
+      <li><b>การสัมผัสทางผิวหนัง</b>
+        <ul>
+          <li>HPV ก่อหูดที่มือ เท้า หรือผิวหนังอื่น</li>
+          <li>สัมผัสหูดหรือผิวหนังติดเชื้อโดยตรง</li>
+          <li>เชื้ออาจอยู่บนผิวหนังที่ไม่มีอาการหูด</li>
+        </ul>
+      </li>
+      <!-- สามารถเพิ่มรายละเอียดอื่น ๆ ได้ตามต้องการ -->
+    </ul>
+  </main>
+
+  <footer>
+    (c) 2024 ห้อง 204 - All works licensed with <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless otherwise stated.
+  </footer>
+</body>
+</html>
