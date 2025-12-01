@@ -42,7 +42,7 @@
       border-radius: 10px;}
 
    section{
-      background: linear-gradient(Hotpink,lightskyblue,white);
+      background: linear-gradient(limegreen,yellow,white);
       padding:15px;
       margin:20px auto;
       width:70%;
@@ -56,9 +56,22 @@
       transform: scale(1.5);
       cursor:pointer;
    }
-</style>
-
-  .zoom;hover{transform: scale(1.5); cursor:pointer}
+  img:hover{animation: glowcolors 1.2s infinite alternate;}
+  @keyframes glowcolors{
+   0% {box-shadow: 0 0 20px hotpink;}
+   25% {box-shadow: 0 0 20px skyblue;}
+   50% {box-shadow: 0 0 20px gold;}
+   75% {box-shadow:0 0 20px violet;}
+   100% {box-shadow:0 0 20px red;}
+  }
+  .bling-bg{
+    animation:blinkbg 1s infinite alternate;
+    padding:3px 6px;
+  }
+  @keyframes blinkbg{
+    0%{background: yellow;}
+    100% {background: orange;}
+  }
   </style>
   </head>
    <body background="https://gotostadiums.com/wp-content/uploads/2020/03/spurs-stadium-tour-2-1024x768.jpg">
